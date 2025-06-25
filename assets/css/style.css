@@ -1422,6 +1422,7 @@
     .testimonials-text {
       line-clamp: 2;
       -webkit-line-clamp: 2;
+      width: max-content;
     }
   
     /* testimonials modal */
