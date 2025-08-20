@@ -1866,3 +1866,41 @@
     .timeline-text { max-width: 700px; }
   
   }
+  /* Add a glowing effect to the blog link */
+.glow-link {
+  color: #0fd6ab; /* your main highlight color */
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.glow-link.blog {
+  color: #0fd6ab; /* main color */
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 0 5px #0fd6ab, 0 0 10px #0fd6ab;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.glow-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #0fd6ab, 0 0 20px #0fd6ab, 0 0 30px #0fd6ab;
+  transform: scale(1.05);
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #0fd6ab, 0 0 10px #0fd6ab, 0 0 15px #0fd6ab;
+  }
+  50% {
+    text-shadow: 0 0 10px #0fd6ab, 0 0 20px #0fd6ab, 0 0 25px #0fd6ab;
+  }
+  100% {
+    text-shadow: 0 0 5px #0fd6ab, 0 0 10px #0fd6ab, 0 0 15px #0fd6ab;
+  }
+}
+/* Optional: make the entire contact item glow on hover */
+/* .blog-highlight:hover {
+  background: rgba(15, 214, 171, 0.1);
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+} */
