@@ -306,7 +306,7 @@
     transition: var(--transition-2);
   }
   
-  .sidebar.active { max-height: 450px; }
+  .sidebar.active { max-height: 500px; }
   
   .sidebar-info {
     position: relative;
@@ -940,8 +940,8 @@
   
   .project-img {
     position: relative;
-    width: 100%;
-    height: 200px;
+    width: auto;
+    height: auto;
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 15px;
