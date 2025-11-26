@@ -330,13 +330,14 @@
   }
   
   .info-content .title {
-    color: var(--white-1);
+    color: #de4300;
     background: var(--onyx);
     font-size: var(--fs-8);
-    font-weight: var(--fw-300);
+    font-weight: bold ;
     width: max-content;
     padding: 3px 12px;
     border-radius: 8px;
+    text-transform: uppercase;
   }
   
   .info_more-btn {
@@ -527,7 +528,9 @@
   
   .service-icon-box { margin-bottom: 10px; }
   
-  .service-icon-box img { margin: auto; }
+  .service-icon-box img 
+  { margin: auto;
+  }
   
   .service-content-box { text-align: center; }
   
